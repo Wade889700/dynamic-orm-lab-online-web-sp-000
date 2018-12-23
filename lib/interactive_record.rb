@@ -41,6 +41,10 @@ class InteractiveRecord
 
   end
 
+  def save
+
+  end
+
 
 
 
