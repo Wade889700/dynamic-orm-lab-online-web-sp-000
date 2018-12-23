@@ -60,7 +60,12 @@ class InteractiveRecord
   end
 
   def self.find_by(attribute)
-    
+    column = attribute.to_a.flatten[0].to_s 
+    value = attribute.to_a.flatten[1]
+
+    if value.to_i > 1 
+      sql = "SELECT * FROM #{self.table_name} WHERE #{column_name} = #{value}"
+
   end
 
 end
