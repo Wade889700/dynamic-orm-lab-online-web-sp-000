@@ -38,7 +38,7 @@ class InteractiveRecord
   end
 
   def values_for_insert
-
+      
   end
 
   def save
@@ -50,7 +50,5 @@ class InteractiveRecord
 
   def self.find_by
   end
-
-
 
 end
