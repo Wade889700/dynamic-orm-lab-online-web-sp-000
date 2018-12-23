@@ -27,8 +27,8 @@ class InteractiveRecord
     self.class.table_name
   end
 
-  def column_name_for_insert 
-
+  def column_name_for_insert
+    self.class.column_names.delete_if {|col| col == "id"}
   end
 
   def initialize(options={})
