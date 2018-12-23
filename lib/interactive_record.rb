@@ -64,9 +64,9 @@ class InteractiveRecord
     value = attribute.to_a.flatten[1]
 
     if value.to_i > 0
-       sql = "SELECT * FROM #{self.table_name} WHERE #{column_names} = #{value};"
+       sql = "SELECT * FROM #{self.table_name} WHERE #{column} = #{value};"
      else
-       sql = "SELECT * FROM #{self.table_name} WHERE #{column_names} = '#{value}';"
+       sql = "SELECT * FROM #{self.table_name} WHERE #{column} = '#{value}';"
      end
     DB[:conn].execute(sql)
   end
