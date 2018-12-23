@@ -37,6 +37,10 @@ class InteractiveRecord
     end
   end
 
+  def values_for_insert
+
+  end
+
 
 
 
