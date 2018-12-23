@@ -20,7 +20,7 @@ class InteractiveRecord
   end
 
   self.column_names.each do |attribute|
-    attr_accessor attribute.to_s
+    attr_accessor attribute.to_sym
   end
 
 end
