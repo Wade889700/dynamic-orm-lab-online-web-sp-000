@@ -23,8 +23,8 @@ class InteractiveRecord
     attr_accessor attribute.to_sym
   end
 
-  def table_name_for_insert 
-    
+  def table_name_for_insert
+    self.class.table_name
   end
 
 end
