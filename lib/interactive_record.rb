@@ -31,13 +31,13 @@ class InteractiveRecord
     self.class.column_names.delete_if {|col| col == "id"}.join(", ")
   end
 
-  def initialize(options={})
-    options.each do |property, value|
-      self.send("#{property}=", value)
+  def initialize(attribute={})
+    attribute.each do |attribute, value|
+      self.send("#{attribute}=", value)
     end
   end
 
-  
-  
+
+
 
 end
