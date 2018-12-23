@@ -21,5 +21,6 @@ class InteractiveRecord
 
   self.column_names.each do |attribute|
     attr_accessor attribute.to_s
+  end
 
 end
